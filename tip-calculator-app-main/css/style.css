@@ -1,0 +1,126 @@
+:root {
+    /* primary color */
+    --color-primary: hsl(172, 67%, 45%);
+    /* neutral colors */
+    --color-bg-darker: hsl(183, 100%, 15%);
+    --color-bg-darkgray: hsl(186, 14%, 43%);
+    --color-bg-grayish: hsl(184, 14%, 56%);
+    --color-bg-lg: hsl(185, 41%, 84%);
+    --color-bg-verylg: hsl(189, 41%, 97%);
+    --color-bg-lg: hsl(0, 0%, 100%);
+    /* font sizes */
+    --fs-forms: 24px;
+    /* font family */
+    --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+    font-family: var(--font-body);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--color-bg-lg);
+    width: 340px;
+    border-radius: 22px;
+    padding: 25px;
+}
+
+.card-content h4 {
+    color: var(--color-bg-darkgray);
+    margin: 8px 0;
+}
+
+input {
+    background-color: hsl(185, 41%, 84%);
+    width: 100%;
+    padding: 10px;
+    opacity: 0.3;
+}
+
+input::placeholder {
+    color: black;
+}
+
+#tipperson h3 {
+    color: white;
+}
+
+#tipperson span {
+    display: block;
+}
+
+.caja-botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px 15px;
+}
+
+.btn-tip {
+    padding: 6px 15px;
+    width: 47%;
+    font-weight: 700;
+    color: white;
+    background-color: hsl(183, 100%, 15%);
+    font-size: 20px;
+    border: 2px solid hsl(172, 67%, 45%);
+    border-radius: 6px;
+}
+
+.btn-tip:hover {
+    background-color: hsl(182, 85%, 8%);
+    color: hsl(0, 0%, 70%);
+    border: 2px solid hsl(219, 100%, 61%);
+}
+
+.number-people {
+    margin: 25px 0;
+}
+
+.card-showtip {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px 0;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border-radius: 10px;
+}
+
+.item {
+    padding: 10px 0;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+span {
+    display: block;
+}
+
+p {
+    color: hsl(172, 67%, 45%);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#reset {
+    padding: 10px;
+    width: 100%;
+    display: inline-block;
+}

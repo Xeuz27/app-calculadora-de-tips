@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <section class="card-content">
+                <h4 class="card-label">
+                    Bill
+                </h4>
+                <input id="totalAccount" type="text" class="input" placeholder="145$">
+                <div class="">
+                    <h4 class="card-label">
+                        Select Tip %
+                    </h4>
+                </div>
+
+                <div class="caja-botones">
+                    <button data-number="5" class="btn-tip">5%</button>
+                    <button data-number="10" class="btn-tip">10%</button>
+                    <button data-number="15" class="btn-tip">15%</button>
+                    <button data-number="25" class="btn-tip">25%</button>
+                    <button data-number="50" class="btn-tip">50%</button>
+                    <button id="customTip" class="btn-tip">custom</button>
+                </div>
+                <div class="number-people">
+                    <h4 class="card-label">
+                        Number of People
+                    </h4>
+                    <input id="NPeople" type="text" class="input" placeholder="5">
+                </div>
+            </section>
+
+            <section class="card-showtip">
+                <div class="item">
+                    <h3>
+                        Tip Amount
+                        <span>/ person</span>
+                    </h3>
+                    <p id="tipPerson">
+                    </p>
+                </div>
+                <div class="item">
+                    <h3>
+                        total
+                        <span>/ person</span>
+                    </h3>
+                    <p id="tipTotal">
+                    </p>
+                </div>
+                <button class="reset" id="reset">
+                Reset
+              </button>
+
+            </section>
+
+        </div>
+    </div>
+    <script src="/main.js"></script>
+</body>
+
+</html>
